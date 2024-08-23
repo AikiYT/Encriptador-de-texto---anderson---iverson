@@ -5,10 +5,11 @@
 }
 body{
     background-color: #f4f4fc;
+    overflow: hidden;
 }
 header{
     width: 100%;
-    height: 3px;
+    height: 0px;
 }
 .logo{
     width: 100px;
@@ -32,9 +33,6 @@ main{
     height: 600px;
 }
 .cajatexto{
-    align-content: center;
-    align-items: center;
-    right: 40px;
     border-radius: 15px;
     width: 80%;
     height: 90%;
@@ -48,15 +46,15 @@ main{
 }
 .cajatexto::placeholder{
     color: #0A3871;
+    text-align: center;
 }
 .alerta{
     position: absolute;
-    top: 670px;
-    left: 370px;
+    top: 650px;
+    left: 150px;
     display: flex;
     color: #495057;
 }
-
 .Contenedor-botones{
     position: absolute;
     top: 690px;
@@ -93,8 +91,9 @@ main{
 .seccion2{
     display: block;
     position: relative;
+    margin-top: 50px;
     width: 400px;
-    height: 680px;
+    height: 630px;
     right: 50px;
     padding-right: 20px;
     background-color: #ffffff;
@@ -147,7 +146,7 @@ main{
     display: flex;
     position: absolute;
     bottom: 400px;
-    top: 700px;
+    top: 98%;
     background-color: aqua;
     padding-left: 40px;
 }
@@ -164,14 +163,12 @@ main{
     border: 1px solid #0A3871;
     cursor: pointer;
     position: relative;
+    margin-top: 0px;
     top: 2px;
     right: 4px;
 }
-
 .btn-copiar:hover{
     background-color: #0A3871;
     color: #FFF;
     transition: all 0.45s;
 }
-
-/* miraaa anderson */
