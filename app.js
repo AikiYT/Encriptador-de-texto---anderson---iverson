@@ -57,42 +57,16 @@ function encriptarTexto(mensaje){
 }
 
 
-function desencriptarTexto(mensaje){
-    var texto = mensaje;
-    var textoFinal = "";
+function desencriptarTexto(mensaje) {
+    let texto = mensaje;
+    texto = texto.replace(/ai/g, "a");
+    texto = texto.replace(/enter/g, "e");
+    texto = texto.replace(/imes/g, "i");
+    texto = texto.replace(/ober/g, "o");
+    texto = texto.replace(/ufat/g, "u");
 
-    for(var i = 0; i < texto.length; i++){
-        if (texto[i] == "a"){
-        textoFinal = textoFinal + "a"
-        i = i+1;
-    }
-    else if (texto[i] == "e"){
-        textoFinal = textoFinal + "e"
-        i = i+4;
-    }
-    else if (texto[i] == "i"){
-        textoFinal = textoFinal + "i"
-        i = i+3;
-    }
-    else if (texto[i] == "o"){
-        textoFinal = textoFinal + "o"
-        i = i+3;
-    }
-    else if (texto[i] == "u"){
-        textoFinal = textoFinal + "u"
-        i = i+3;
-    }
-    else{
-        textoFinal = textoFinal + texto[i];
-    }
-
-
+    return texto;
 }
-
-return textoFinal;
-
-}
-
 
 const btnCopiar = document.querySelector(".btn-copiar");
     btnCopiar.addEventListener("click", copiar = () => {
