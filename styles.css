@@ -172,3 +172,7 @@ main{
     color: #FFF;
     transition: all 0.45s;
 }
+
+.ocultar{
+    display: none;
+}
